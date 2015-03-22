@@ -9,7 +9,7 @@ labels = iris.target_names
 #Symbols to represent the points for the three classes on the graph.
 gMarkers = ["+", "_", "x"]
 #Colours to represent the points for the three classes on the graph
-gColours = ["blue", "yellow", "purple"]
+gColours = ["blue", "magenta", "cyan"]
 #The index of the class in target_names
 gIndices = [0, 1, 2]
 #Column indices for the two features you want to plot against each other:
