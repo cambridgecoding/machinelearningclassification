@@ -13,3 +13,5 @@ from sklearn.naive_bayes import GaussianNB
 
 from sklearn import cross_validation
 from sklearn.grid_search import GridSearchCV
+
+print "Good to go, all packages installed ok, ready to code."
