@@ -17,9 +17,9 @@ f1 = 0
 f2 = 1
 
 for mark, col, i, iris.target_name in zip(gMarkers, gColours, gIndices, labels):
-   plt.scatter(x = X[iris.target == i, f1], 
-y = X[iris.target == i, f2], 
-marker = mark, c = col, label=iris.target_name)
+   plt.scatter(x = X[iris.target == i, f1], y = X[iris.target == i, f2], marker = mark, c = col, label=iris.target_name)
 plt.legend(loc='upper right')
+plt.xlabel(iris.feature_names[f1])
+plt.ylabel(iris.feature_names[f2])
 plt.show()
 
