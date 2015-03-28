@@ -15,8 +15,8 @@ def plotvector(XTrain, yTrain, XTest, yTest, weights, upperLim = 310):
     return(results)
 
 def plotaccuracy(XTrain, yTrain, XTest, yTest, upperLim):
-    pltvector1 = plotvector(XTrain, yTrain, XTest, yTest, weights = "uniform")
-    pltvector2 = plotvector(XTrain, yTrain, XTest, yTest, weights = "distance")
+    pltvector1 = plotvector(XTrain, yTrain, XTest, yTest, weights = "uniform", upperLim=upperLim)
+    pltvector2 = plotvector(XTrain, yTrain, XTest, yTest, weights = "distance", upperLim=upperLim)
     line1 = plt.plot(pltvector1[:,0], pltvector1[:,1], label = "uniform")
     line2 = plt.plot(pltvector2[:,0], pltvector2[:,1],  label = "distance")
     plt.legend(loc=3)
